@@ -19,3 +19,13 @@
 - **Text lengths:** Distribution analyzed via Histograms and Boxplots to identify snippet-style news.
 - **Theme Extraction:** Implemented **TF-IDF Vectorization** to move beyond simple word counts and identify industry-specific terminology.
 - **Spike Analysis:** Automated detection of volume spikes, cross-referenced with historical market events (e.g., 2020 volatility).
+## 🧪 Testing & Quality Assurance
+To ensure the reliability of technical indicators, we implement:
+- **Manual Math Validation:** Periodically verifying library outputs against raw rolling-window calculations (found in Task 2 notebooks).
+- **Automated CI:** GitHub Actions verify environment stability and library compatibility on every push.
+
+## 🤝 Contribution & Scaling
+To scale this project for more stock symbols:
+1. **Branching:** All new features must be developed on a named branch (e.g., `task-2-revision`).
+2. **Modularization:** Reusable cleaning logic is stored in the `src/` directory.
+3. **Integration:** New indicators must be validated against TA-Lib standards before being merged into the main pipeline.
